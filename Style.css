@@ -87,3 +87,41 @@ header nav a{
     transform: translateY(-50%);
     transition: right 1.5s;
 }
+
+.carousel .list .item .introduce{
+    opacity: 0;
+    pointer-events: none;
+}
+.carousel .list .item:nth-child(2) .introduce{
+    opacity: 1;
+    pointer-events: auto;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform:  translateY(-50%);
+    transition: opacity 0.5s;
+}
+.carousel .list .item .introduce .title{
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1em;
+}
+.carousel .list .item .introduce .topic{
+    font-size: 4em;
+    font-weight: 500;
+}
+.carousel .list .item .introduce .des{
+    font-size: small;
+    color: #5559;
+}
+.carousel .list .item .introduce .seeMore{
+    font-family: Poppins;
+    margin-top: 1.2em;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #555;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: background 0.5s;
+}
